@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  border-radius: 6px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+  background-color: tomato;
+  height: 120px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.header h1 {
+  font-family: Lato, sans-serif;
+  margin: 10px 10px;
+  color: white;
+}
+
+.header input {
+  height: 35px;
+  width: 90%;
+  padding: 15px;
+  margin: 0 10px;
+  border-radius: 20px;
+  background-color: lightcoral;
+  outline: none;
+  border: 1px solid #eee;
+  color: white;
+}
+
+::placeholder {
+  color: gainsboro;
+}
+
+.all-users {
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.all-users li {
+  list-style: none;
+  display: flex;
+  padding: 20px 10px;
+}
+
+.all-users li:not(:last-child) {
+  border: 1px solid #eee;
+}
+
+.all-users li img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  margin: 20px;
+}
+
+.all-users .user-info {
+  font-family: Lato, sans-serif;
+  margin: 10px 10px;
+}
+
+.all-users .user-info h1,
+.all-users .user-info p {
+  padding: 10px;
+  margin: 0 10px;
+}
+
+#loading {
+  margin: 10px 0;
+  font-family: Lato, sans-serif;
+}
+
+.all-users .hide {
+  display: none;
+}
